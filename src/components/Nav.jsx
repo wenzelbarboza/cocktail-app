@@ -3,7 +3,7 @@ import React from 'react'
 const Nav = () => {
     return (
         <nav className=' w-full bg-gray-200 flex justify-center'>
-            <h1 className="climateFont text-3xl ">cocktail</h1>
+            <h1 className="climateFont text-3xl my-3 ">cocktail</h1>
         </nav>
     )
 }
