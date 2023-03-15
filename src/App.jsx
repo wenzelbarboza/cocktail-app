@@ -1,7 +1,22 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import Nav from './components/Nav'
 import MainScreen from './screens/mainScreen'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import DrinkDetail from './screens/DrinkDetail';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <MainScreen />
+  },
+  {
+    path: '/detail',
+    element: <DrinkDetail />
+  }
+])
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,7 +24,8 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <MainScreen />
+      <RouterProvider router={router} />
+      {/* <MainScreen /> */}
     </div>
   )
 }
