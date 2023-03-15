@@ -25,7 +25,7 @@ const List = () => {
                             <div className='flex flex-wrap justify-evenly'>
                                 {
                                     result.data.drinks.map((item, index) => {
-                                        return <DrinkItem drinkName={item.strDrink} glass={item.strGlass} type={item.strAlcoholic} image={item.strDrinkThumb} key={index} />
+                                        return <DrinkItem drinkName={item.strDrink} glass={item.strGlass} type={item.strAlcoholic} image={item.strDrinkThumb} key={index} id={index} />
                                     })
                                 }
                             </div>
