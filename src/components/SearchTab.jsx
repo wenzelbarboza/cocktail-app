@@ -29,7 +29,7 @@ const SearchTab = () => {
     return (
         <section className='w-full flex justify-center my-10'>
             <form>
-                <input type="text" placeholder='search' className=' bg-gray-200 text-2xl w-72 rounded-md' onChange={handleSearch} value={searchQuery} />
+                <input type="text" placeholder='search' className=' bg-gray-200 text-2xl w-80 h-10 rounded-md px-2' onChange={handleSearch} value={searchQuery} />
             </form>
         </section>
     )
